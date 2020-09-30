@@ -7,6 +7,32 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="295*"/>
+            <RowDefinition Height="139*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="0,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="262" Width="288" Foreground="Black" Grid.RowSpan="2">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF6BFF29" Offset="1"/>
+                    <GradientStop Color="#FF4CB51D" Offset="0.17"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <RadioButton x:Name="pencilRadioButton" Content="Pencil" HorizontalAlignment="Left" Margin="33,151,0,0" VerticalAlignment="Top" Height="32" Width="140" FontSize="18" GroupName="Items"/>
+        <RadioButton x:Name="penRadioButton" Content="Pen" HorizontalAlignment="Left" Margin="33,183,0,0" VerticalAlignment="Top" Height="32" Width="140" FontSize="18" GroupName="Items"/>
+        <RadioButton x:Name="phoneRadioButton" Content="Phone" HorizontalAlignment="Left" Margin="33,215,0,0" VerticalAlignment="Top" Height="33" Width="140" FontSize="18" GroupName="Items"/>
+        <RadioButton x:Name="padRadioButton" Content="Pad" HorizontalAlignment="Left" Margin="33,249,0,0" VerticalAlignment="Top" Height="32" Width="140" FontSize="18" GroupName="Items"/>
+        <Label x:Name="label1" Content="Choose the one you prefer to use!" HorizontalAlignment="Left" Margin="214,37,0,0" VerticalAlignment="Top" Width="349" FontWeight="Bold" FontSize="20"/>
+        <Label Content="You Picked." HorizontalAlignment="Left" Margin="351,33,0,0" Grid.Row="1" VerticalAlignment="Top" FontWeight="Normal" FontSize="20"/>
+        <Button x:Name="button1" Content="Push Me!" HorizontalAlignment="Left" Margin="100,295,0,0" VerticalAlignment="Top" Grid.RowSpan="2" Height="33" Width="73" Click="button1_Click"/>
+        <Label x:Name="labelAnswer" Content="" HorizontalAlignment="Left" Margin="466,33,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="20" Width="324"/>
+        <Image x:Name="imagePen" HorizontalAlignment="Left" Height="170" VerticalAlignment="Top" Width="152" Margin="308,100,0,0">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="pen.png"/>
+            </Image.OpacityMask>
+        </Image>
 
     </Grid>
 </Window>
